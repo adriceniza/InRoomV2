@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InRoom</title>
+    <link rel="shortcut icon" type="image/png" href="img/1280-200.png">
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/js.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+</head>
+
+<body>
+
+    <section id="hero" class="hero">
+
+        <div class="menu">
+            <a  href="#menuid"><ion-icon id="menu-a" name="menu-outline"></ion-icon></a>
+        </div>
+        <nav id="menuid" class="main-navigation animated hidden">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#presentation">Meet us</a></li>
+                <li><a href="#galeria">Galery</a></li>
+                <li><a href="#formsection">Recommend us</a></li>
+                <li><a href="#contactus">Let's talk</a></li>
+            </ul>
+        </nav>
+
+        <div >
+            <a href="#contactus" id="contact">Contact</a>
+        </div>
+
+        <img src="img/caribe.jpg" alt="" class="parallax">
+
+        <div class="text-wrapper">
+            <div >
+                <img class="imgline" src="img/1280-200.png" alt="logo">
+                <h1 class="headline">INROOM</h1>
+                
+            </div>
+            
+            <div class="play">
+                <a href="game.html">
+                    <ion-icon id="playicon" class="align-middle md hydrated" name="play" role="img" aria-label="play"></ion-icon>
+                </a>
+            </div>
+            <div class="subline">
+                <h4>Introducete al maravilloso mundo de la realidad virtual.</h4>
+            </div>
+
+            <a id="introbtn" href="#presentation"><img id="arrow" src="img/downarrow.png" height="50" width="50"
+                    class="parallax-1" alt="arrow"></a>
+
+
+
+        </div>
+    </section>
+    <section class="overflow container">
+        <section id="presentation">
+            <div class="text-center pt-5 display-8">
+                <h2>Quienes somos</h2>
+                <h4>Somos un grupo de estudiantes de dos ciclos superiores(DAM Y Turismo) , que se han juntado para
+                    hacer un proyecto de clase sobre la realidad virtual enfocada al turismo.</h4>
+            </div>
+            <div id="introrow" class="row">
+                <div class="image col-lg">
+                    <img class="image--img rounded" src="img/elrincon.jpg" alt="presentationimg">
+                    <div class="image--overlay">
+                        <h4>Ies El Rincon</h4>
+                        <p>Tiburcio Cruz</p>
+                        <p>Adrián Ceniza</p>
+                    </div>
+                </div>
+                <div class="image col-lg">
+                    <img class="image--img rounded" src="img/sancristobal.jpg" alt="presentationimg">
+                    <div class="image--overlay">
+                        <h4>Ies San cristobal</h4>
+                        <P>Elena</P>
+                        <p>Adrian Salazar</p>
+                        <p>Luis Miguel Suarez</p>
+                        <p>Jorge Garcia</p>
+                        <p>Christian Pérez</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section id="galeria">
+            <div class="div text-center pt-5 display-8">
+                <h2>Galeria</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/crucero.jpg" class="rounded" alt="galerimagen">
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/TRIANA.jpg" class="rounded" alt="galerimagen">
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/Catedral.jpg" class="rounded" alt="galerimagen">
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/playa-de-las-canteras-d704c106-30b8-4fbd-b389-c3a38b25f808.jpg" class="rounded"
+                        alt="galerimagen">
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/poema_mar.jpg" class="rounded" alt="galerimagen">
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/MercadoPuerto.jpg" class="rounded" alt="galerimagen">
+                </div>
+            </div>
+
+        </section>
+        <section id="formsection">
+            <div class="text-center pt-5 display-8">
+                <h2>Valoranos</h2>
+                <!--form-->
+                <div id="form">
+
+                    <div id="tablaformu-integrantes" class="container-fluid">
+                        <h1 class="text-center display-4 my-4">Alumnos</h1>
+                        <div style="overflow-x:auto;"  >
+                            <table style="overflow-x: auto;" class="table table-hover table-dark tbl">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Apellidos</th>
+                                        <th>Ciclo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Adrian</td>
+                                        <td>Ceniza</td>
+                                        <td>DAM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jorge</td>
+                                        <td>Garcia</td>
+                                        <td>Turismo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Christian</td>
+                                        <td>Pérez</td>
+                                        <td>Turismo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gabriel</td>
+                                        <td>Quevedo</td>
+                                        <td>Turismo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Adrián</td>
+                                        <td>Salazar</td>
+                                        <td>Turismo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Luis Miguel</td>
+                                        <td>Suarez</td>
+                                        <td>Turismo</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                    <div  id="tablaformu-visitantes" class="container-fluid">
+                        <h1 class="text-center display-4 my-4">Visitantes </h1>
+
+                        <div style="overflow-x:auto;"  class=".customized-scrollbar::-webkit-scrollbar flex-container" id="tabla-añadir">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-dark ">
+                                    <thead>
+                                        <tr>
+                                            <th>Fecha</th>
+                                            <th>Nombre</th>
+                                            <th>Ubciación</th>
+                                            <th>Comentario</th>
+                                            <th>Valoración</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbody">
+
+
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                            
+                        </div>
+                        <button id="toggle-btn" class="btn btn-dark " onClick="toggleVisitor()">Abrir</button>
+
+
+                        <div id="newvisitor" class="display-8 hidden">
+                            <form id="new-visitor">
+                                <div class="form-group">
+                                    <label for="first-name">NOMBRE</label>
+                                    <input type="text" name="firstname" value="" placeholder='Escribe tu nombre.'
+                                        id="first-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">UBICACIÓN</label>
+                                    <input type="text" name="country" placeholder='De donde eres.' value="" id="country"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="commentary">COMENTARIO</label>
+                                    <input type="text" name="commentary" placeholder='Escribe tu comentario.' value=""
+                                        id="commentary" required>
+                                </div>
+                                <div class="form-group table-responsive">
+                                    <label for="formvaloracion">Valoranos</label>
+                                    <select id="formvaloracion" aria-label="form-valoracion"
+                                        class="form-select form-select-lg mb-3 required">
+                                        <option hidden selected="selected" disabled="disabled"> --Select-- </option>
+                                        <option>Lo recomiendo</option>
+                                        <option>Me ha gustado</option>
+                                        <option>Esta bien</option>
+                                        <option>No esta mal</option>
+                                        <option>No me ha gustado</option>
+                                        <option>No lo recomiendo</option>
+                                    </select>
+
+                                </div>
+                                <input class="btn btn-dark topmargin-sm " id='new-visitor-btn' type="submit"
+                                    name="enviar" value="Enviar">
+
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactus" class="contactus">
+
+                <div id="text">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Contacta conmigo</h2>
+                            <a id="emaila" href="mailto:ceniiziienta@gmail.com"><ion-icon name="arrow-forward-outline"></ion-icon> Hablemos  </a>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+
+
+        </section>
+
+
+        <div class="footer">
+            <a id="gita" href="https://github.com/adriceniza"><img src="img/github.svg"  alt="git"></a>
+            <p>adriceniza©</p>
+        <a id="scrollup" href="#hero"><ion-icon name="arrow-up-outline"></ion-icon></a>
+
+        </div>
+        
+    </section>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBi988CRFp6JYxz7QrW_SkJvWsgYjZwnGg",
+          authDomain: "crudturismo-cd26f.firebaseapp.com",
+          projectId: "crudturismo-cd26f",
+          storageBucket: "crudturismo-cd26f.appspot.com",
+          messagingSenderId: "350829241550",
+          appId: "1:350829241550:web:4d3a214d06613b90d75c9f"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+</body>
+
+</html>
